@@ -1,0 +1,34 @@
+{% extends 'main/base.html'%}
+
+{% block title %}
+    Main
+{% endblock %}
+
+{% block content %}
+    <h1>Main-page</h1>
+    <div class="form-group">
+    <form action="{% url 'addimage' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-secondary">Load</button>
+    </form>
+     <form action="{% url 'addtofile' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% if im %}
+            <p><img class="img-article-left thumb" width="300px" height="300px" src="{{im.url}}"></p>
+        {% endif %}
+        {% if emotion %}
+            <p>My prediction:  {{ emotion }}</p>
+            {% if not saved %}
+                <button type="submit" class="btn btn-secondary">Save to file</button>
+                {% endif %}
+        {% endif %}
+     </form>
+
+
+   </div>
+
+
+{% endblock %}
+

@@ -1,0 +1,21 @@
+2022-12-24 15:01:15,932 INFO Method "exit" was called
+2022-12-24 15:01:18,179 INFO Method "form_valid" was called
+2022-12-24 15:01:18,179 INFO Method "form_valid" was called
+2022-12-24 15:01:18,181 INFO  me = User.objects.get(username=username)
+2022-12-24 15:01:18,181 INFO 9
+2022-12-24 15:01:18,182 INFO Method "get_success_url" was called
+2022-12-24 15:01:28,467 INFO Method "addimage" was called
+2022-12-24 15:01:28,467 INFO request.method="post"
+2022-12-24 15:01:28,817 INFO Form was saved into DB
+2022-12-24 15:01:28,820 INFO Image: images/me_angry_vsVLQay.png
+2022-12-24 15:01:28,832 INFO Method "init()" was called
+2022-12-24 15:01:30,948 INFO Model is downloaded
+2022-12-24 15:01:31,577 INFO Result of prediction: Neutral
+2022-12-24 15:01:35,781 INFO Method "addtofile" was called
+2022-12-24 15:02:14,509 INFO Method "addimage" was called
+2022-12-24 15:02:14,509 INFO request.method="post"
+2022-12-24 15:02:14,523 INFO Form was saved into DB
+2022-12-24 15:02:14,524 INFO Image: images/me_surprise_lMm8dvh.png
+2022-12-24 15:02:14,682 INFO Result of prediction: Surprise
+2022-12-24 15:02:17,089 INFO Method "addtofile" was called
+2022-12-24 15:02:20,054 INFO Method "aboutuser" was called
